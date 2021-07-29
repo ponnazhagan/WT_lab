@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    background-color: #f2f2f2;
+}
+</style>
+<head>
+
+<body style="background-color:#006161;">
+<h1 align="center">Participant Details</h1>
+<br/>
+<hr/>
+<br/>
+<form method="get">
+
+ <table align="center" cellspacing="1" cellpadding="15" >
+        <tr>
+        <td><b>Enter the name:</b></td>
+        <td><input type="text" pattern="[A-Za-z]{2,}" title="Only characters are allowed"/></td>
+        </tr>
+        <tr>
+        <td><b>Enter the Date of Birth:</b></td>
+        <td><input type="date" name="DOB"/></td>
+        </tr>
+        <tr>
+                <td><strong>Enter Gender:</strong></td>
+                <td>
+                    <input type="radio" name="gender" value="M" />Male
+                    <input type="radio" name="gender" value="F" />Female
+                    <input type="radio" name="gender" value="other" />Others
+                </td>
+            </tr>
+        <tr>
+                <td><b>E-Mail:</b></td>
+                <td><input type="email" /></td>
+            </tr>
+            <tr>
+                <td><b>Enter Mobile number:</b></td>
+                <td><input type="text" pattern="[0-9]{10}" title="excceeding or deceding the count of  10" /></td>
+            </tr>
+            <tr>
+                <td><b>Address:</b></td>
+                <td><textarea rows="4" cols="22"></textarea></td>
+            </tr>
+
+        <tr>
+                <td><b>State:</b></td>
+                <td>
+                    <select>
+                        <option value="TN">Tamil Nadu</option>
+                        <option value="KL">Kerala</option>
+                        <option value="AD">Andhra Pradesh</option>
+                        <option value="KA">Karnataka</option>
+                        <option value="MH">maharastra</option>
+                        <option value="O">Orissa</option>
+                        <option value="MP">Madhiya pradesh</option>
+                        <option value="TS">Telungana</option>
+                    </select>
+                </td>
+            </tr>
+         <tr>
+                <td><b>Pincode:</b></td>
+                <td><input type="text" pattern="[0-9]{10}" title=" excceeding or deceding the count of  6"  />
+            </tr>
+          
+         
+         <tr>
+                <td><b>Events Interested:</b></td>
+                <td>
+                    <input type="checkbox" name="events"/>hackathon
+                    <input type="checkbox"/>quiz
+                    <input type="checkbox"/>spot topic speech
+                    <input type="checkbox"/>paper presentation
+                </td>
+            </tr>
+            
+          <tr>
+                <td>
+                    <b>Do you want Accomodation?</b>
+                </td>
+                <td>
+                    <input type="radio" name="Accomodation" value="Yes" />Yes
+                    <input type="radio" name="Accomodation" value="No" />No
+                </td>
+            </tr>
+</table>
+           <p align="center"><input type="submit" /></p>
+         
+            
+        
+        
+
+
+</form>
+<body>
+<html>
