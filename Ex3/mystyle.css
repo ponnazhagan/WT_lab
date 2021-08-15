@@ -1,0 +1,123 @@
+#header
+    { 
+      padding-top: 10px;
+      padding-bottom: 20px;
+      background-image: url("note10pro.jpg");
+      background-size: cover;
+      
+      
+      
+    }
+#header a {
+      
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 20px;
+      float:right;
+      margin-right: 0px;
+      font-family: sans-serif;
+    }
+#header img#logo {
+         padding-left:30px;
+         max-width:100%;
+         height:auto;
+        
+}
+#header a:hover{
+  color:orange;
+}
+#header a:active {
+color:darkred;
+}
+
+body{
+ margin:0%;
+}
+
+
+#image{
+  display: block; 
+  width:100%;
+  height: 600px;
+
+}  
+
+
+
+  
+
+    
+
+div.gallery img {
+  
+  margin-top:50px;
+  margin-bottom: 10px;
+  padding-right:10px;
+  padding-left: 100px;
+  float:left;
+  
+}
+
+
+div.gallery:hover {
+  opacity:0.7;
+}
+.heading{
+  text-align: center;
+  margin-top: 350px;
+  
+  text-shadow: 2px 2px 5px black;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.star{
+  
+  list-style-type: none;
+  margin-top: 7%;
+  
+}
+
+
+.star1{
+  float: left;
+}
+.star2{
+  float:right;
+  margin-right:17%;
+}
+
+#hover img:hover{
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.dropdown {
+  position: relative;
+  float:right;
+ 
+}
+
+.dropdown-content {
+  margin-top:10px;
+  display: none;
+  position:absolute;
+  background-color: black;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding-bottom:  10px;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+
+.foot {
+   
+   margin-top:5%;
+   padding:20px;
+   display:block;
+   
+   background-image: url("note10pro.jpg");
+   color: rgb(255, 255, 255);
+}

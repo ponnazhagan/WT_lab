@@ -1,0 +1,101 @@
+#header
+    { 
+      padding-top: 10px;
+      padding-bottom: 20px;
+      background-image: url("11lite.jpg");
+      background-size: cover;
+      
+      
+      
+    }
+#header a {
+      
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 20px;
+      float:right;
+      margin-right: 0px;
+      font-family: sans-serif;
+    }
+#header img#logo {
+         padding-left:30px;
+         max-width:100%;
+         height:auto;
+        
+}
+#header a:hover{
+  color:orange;
+}
+#header a:active {
+color:darkred;
+}
+
+body{
+ margin:0%;
+}
+
+.dropdown {
+    position: relative;
+    float:right;
+   
+  }
+  
+  .dropdown-content {
+    margin-top:10px;
+    display: none;
+    position:absolute;
+    background-color: black;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-bottom:  10px;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:block;
+    margin-top: 50px;
+    
+    text-shadow: 2px 2px 5px black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  div.gallery {
+    
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+.image{
+  width:100%;
+}
+.heading{
+  text-align: center;
+  margin-top: 50px;
+  
+  text-shadow: 2px 2px 5px black;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+  .foot {
+     
+     margin-top:40%;
+     padding:20px;
+     display:block;
+     
+     background-image: url("note10pro.jpg");
+     color: rgb(255, 255, 255);
+  }
