@@ -68,6 +68,10 @@ body{
 
 .dropdown:hover .dropdown-content {
   display:block;
+  margin-top: 50px;
+    
+   text-shadow: 2px 2px 5px black;
+   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 
