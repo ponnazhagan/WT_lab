@@ -1,0 +1,71 @@
+.navbar-nav a{
+    
+    color:white;
+    padding:20px;
+    margin-left: 30px;
+    font-size: 20px;
+    
+}
+#backimg{
+    background-image:url("race.png");
+    border-radius: 0px;
+    border: none !important;
+    padding-bottom: 700px;
+}
+#backimg a:hover{
+    background-color: #ff6600;
+    color: white;
+
+}
+.active{
+    color: #ff6600;
+}
+.desc{
+    font-weight: 500;
+    font-size: 15px;
+    margin-top:20px;
+    
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.desc1{
+    margin:10px;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.desc2{
+    margin:10px;
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.desc3{
+    margin-top:10px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+img {
+    
+    transform: scale(1);
+    
+    transition: .3s ease-in-out;
+}
+img:hover{
+  
+    
+    
+    transform: scale(1.07);
+}
+.foot{
+    padding:30px;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+   
+}

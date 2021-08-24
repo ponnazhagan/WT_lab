@@ -1,0 +1,45 @@
+.navbar-nav a{
+    
+    color:white;
+    padding:20px;
+    margin-left: 30px;
+    font-size: 20px;
+    
+}
+
+#backimg{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 20px;
+    width:100%
+}
+#backimg a:hover{
+    background-color: #ff6600;
+    color:white;
+
+}
+.active{
+    color: #ff6600;
+}
+.label{
+    padding:50px;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color:white;
+    
+    
+}
+.color{
+    background-color:whitesmoke;
+    overflow: hidden;
+}
+
+.foot{
+    padding:30px;
+    background-color: black;
+    color: white;
+    margin-top: 52px;
+   
+}

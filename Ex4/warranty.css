@@ -1,0 +1,33 @@
+.navbar-nav a{
+    
+    color:white;
+    padding:20px;
+    margin-left: 30px;
+    font-size: 20px;
+    
+}
+
+#backimg{
+    background-image:url("warranty.jfif");
+    background-repeat: no-repeat;
+   background-size: 100% 100%;
+    padding-bottom: 700px;
+    width:100%
+}
+#backimg a:hover{
+    background-color: #ff6600;
+    color:white;
+
+}
+.active{
+    color: #ff6600;
+}
+
+
+.foot{
+    padding:30px;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+   
+}
