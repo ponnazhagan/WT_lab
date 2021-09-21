@@ -1,0 +1,33 @@
+#border1 {
+    background-color: #d0ecf0;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 145px;margin-right: 145px;
+    height:1200px;
+} 
+#border2{
+    margin-top:30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 350px;
+    position: absolute;
+    display:block;
+    background-color: white;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    padding:5px;
+    color: #2874f0;
+    border-color: #2874f0;
+    border-radius: 10px;
+    background-color:white;
+
+}
+footer{
+    padding:30px;
+    background-color:black ;
+    color:white;
+    margin-top:10px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CGPAcalculator</title>
+    <link rel="stylesheet"  href="cgpacalculator.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<div id="border1">
+    <img style="float: left;padding:10px;margin-left: 40px;margin-top:20px;" src="calculator.png" width="30px" height="30px">
+    <h2 style="float: left;padding-top:10px;margin-left: 0px;margin-top:25px;font:1em sans-serif;">CGPA Calculator</h2>
+    <h1 style="margin-top: 70px;float:left;position:absolute;margin-left: 90px;">CGPA Calculator</h1>
+    <p style="margin-top:108px;float:left;position:absolute;margin-left: 140px;" >Calculate the CGPA of the current semester by calculating</p>
+    <p style="margin-top:130px;float:left;position:absolute;margin-left:90px" >the individual GPA of the semester.</p>
+
+
+    <p style="position:absolute;margin-left: 90px;margin-top:175px;float:left">Select upto which semester you have to calculate cgpa:</p>
+
+    <select style="float:left;position:absolute;margin-top:175px;margin-left:610px" id="sem">
+      <option value="1">1st sem</option>
+      <option value="2">2nd sem</option>
+      <option value="3">3rd sem</option>
+      <option value="4">4th sem</option>
+      <option value="5">5th sem</option>
+      <option value="6">6th sem</option>
+      <option value="7">7th sem</option>
+      <option value="8">8th sem</option>
+    </select>
+    
+
+
+
+    <img style="margin-left:700px;" src="gpa-calculator.jpg" width="500px" height="300px">
+    
+  
+
+<div id="border2" >
+ <h2  style="margin-left: 35px;" id="enter">Semester 1 </h2>
+ <table   cellspacing="1" cellpadding="10" style="padding: 30px;" >
+    <thead>
+        <tr>
+            <th>Courses:</th>
+            <th>Course credits</th>
+            <th>Grade points</th>
+           
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr>
+        <td> Course 1</td>
+        <td><input type="text" id="sem11a" value="0"/></td>
+        <td><input type="text" id="sem11b" value="0" /></td>
+        </tr>
+
+
+        <tr>
+            <td> Course 2</td>
+            <td><input type="text" id="sem12a" value="0" /></td>
+            <td><input type="text" id="sem12b" value="0"/></td>
+        </tr>
+
+        <tr>
+            <td> Course 3</td>
+            <td><input type="text" id="sem13a" value="0" /></td>
+            <td><input type="text" id="sem13b" value="0"/></td>
+        </tr>
+
+        <tr>
+            <td> Course 4</td>
+            <td><input type="text" id="sem14a" value="0" /></td>
+            <td><input type="text" id="sem14b" value="0"/></td>
+        </tr>
+
+        <tr>
+            <td> Course 5</td>
+            <td><input type="text" id="sem15a" value="0" /></td>
+            <td><input type="text" id="sem15b" value="0" /></td>
+        </tr>
+        <tr>
+            <td> Course 6</td>
+            <td><input type="text" id="sem16a" value="0" /></td>
+            <td><input type="text" id="sem16b" value="0"/></td>
+        </tr>
+
+        <tr>
+            <td> Course 7</td>
+            <td><input type="text" id="sem17a" value="0" /></td>
+            <td><input type="text" id="sem17b" value="0"/></td>
+        </tr>
+        <tr>
+            <td> Course 8</td>
+            <td><input type="text" id="sem18a" value="0" /></td>
+            <td><input type="text" id="sem18b" value="0"/></td>
+        </tr>
+
+        <tr>
+            <td> Course 9</td>
+            <td><input type="text" id="sem19a" value="0" /></td>
+            <td><input type="text" id="sem19b" value="0"/></td>
+        </tr>
+
+        <tr>
+            <td> Course 10</td>
+            <td><input type="text" id="sem110a" value="0" /></td>
+            <td><input type="text" id="sem110b" value="0"/></td>
+        </tr>
+        
+        
+       
+        </tbody>
+
+</table>
+<h2 align="center" style="color:green" id="demo"></h2>
+<h2 align="center"  style="color:green" id="demo1"></h2>
+
+<button id="button" onclick="reset()">Enter next semester</button>
+<button   onclick="myFunction1()">Calculate GPA</button>
+
+<button  onclick="cgpa()">Calculate CGPA</button>
+
+</div>
+
+</div>
+
+
+
+
+
+<script>
+
+    var csum=0,ccredit=0,last,k=0;
+    
+ 
+
+function myFunction1() {
+    let sum = 0,creditsum=0,gpa;
+for(let i=1;i<=10;i++)
+{
+    let product,credit,grade;
+    let a="sem1"+i+"a";
+    let b="sem1"+i+"b";
+    credit=document.getElementById(a).value;
+    grade=document.getElementById(b).value;
+    creditsum=creditsum + credit*1;
+    product= credit * grade;
+    sum=sum + product;
+    csum=csum + product;
+    ccredit=ccredit + credit * 1;
+   
+}
+gpa=sum/creditsum;
+document.getElementById("demo").innerHTML ="Grade Points Average (GPA):"+ gpa ;
+k=k+1;
+}
+
+
+function reset() {
+
+   last=document.getElementById("sem").value;
+   
+
+   if(k < last){
+   
+     document.getElementById("enter").innerHTML = "semester"+ (k+1);
+     
+     for(let i=1;i<=10;i++){
+       let product,credit;  
+       let a="sem1"+i+"a";
+       let b="sem1"+i+"b";
+       credit=document.getElementById(a);
+       grade=document.getElementById(b);
+       credit.value="0";grade.value="0";
+     }
+     if(k == last-1)
+     
+       document.getElementById("button").innerHTML = "Enter the last semester";
+       
+       
+     
+   }
+   if(k == last){
+    alert("You have entered all the grade points and course credit upto  "+(k)+" semester! Now calculate CGPA");
+
+   }
+     
+   
+  
+      
+     
+}
+
+function cgpa(){
+    let cgpa1= csum/ccredit;
+    document.getElementById("demo1").innerHTML = "Cumalative Grade Points Average (CGPA):"+cgpa1 ;
+ } 
+</script>
+<footer>
+    <p>© 2021 CGPA CALCULATOR</p>
+</footer>
+
+
+
+</body>
+</html>
