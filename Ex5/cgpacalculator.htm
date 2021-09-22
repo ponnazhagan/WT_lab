@@ -151,7 +151,7 @@ for(let i=1;i<=10;i++)
    
 }
 gpa=sum/creditsum;
-document.getElementById("demo").innerHTML ="Grade Points Average (GPA):"+ gpa ;
+document.getElementById("demo").innerHTML ="Grade Points Average (GPA):"+ gpa.toFixed(2) ;
 k=k+1;
 }
 
@@ -193,7 +193,7 @@ function reset() {
 
 function cgpa(){
     let cgpa1= csum/ccredit;
-    document.getElementById("demo1").innerHTML = "Cumalative Grade Points Average (CGPA):"+cgpa1 ;
+    document.getElementById("demo1").innerHTML = "Cumalative Grade Points Average (CGPA):"+cgpa1.toFixed(2) ;
  } 
 </script>
 <footer>
